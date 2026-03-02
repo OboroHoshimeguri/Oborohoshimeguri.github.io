@@ -9,21 +9,130 @@
             background-color: #f0f0f0;
             text-align: center;
             font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
         }
         h1 {
             color: #4763B7;
-            margin-top: 50px;
+            margin-top: 20px;
         }
         img {
             border: 3px solid #4763B7;
             max-width: 90%;
             height: auto;
-            margin-top: 20px;
+            margin: 20px 0;
+        }
+        button {
+            background-color: #4763B7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        button:hover {
+            background-color: #365299;
+        }
+        p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 10px auto;
+        }
+        .copy-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .copy-btn:hover {
+            opacity: 0.8;
+        }
+        .group-box {
+            background-color: #4763B7;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            max-width: 500px;
+            margin: 30px auto;
+        }
+        .group-box p {
+            color: white;
+            margin: 5px 0;
+        }
+        hr {
+            margin: 30px auto;
+            width: 50%;
+            border: 1px solid #ccc;
         }
     </style>
 </head>
 <body>
     <h1>你来看猫猫了吗？</h1>
+    
     <img src="猫猫天下第一.png" alt="星巡猫猫">
+    
+    <!-- 打招呼按钮 -->
+    <button onclick="alert('很高兴认识你哦～\nNice To Meet You~\n_')">初めまして</button>
+    
+    <br><br><br><br><br>
+    
+    <p>我是这个网站兼星巡猫猫的画师“ラクジン”，有需要你们也可以叫我洛尘</p>
+    
+    <br>
+    
+    <p>通过快手号找我：
+        <button class="copy-btn" style="color:#205198;" onclick="navigator.clipboard.writeText('luochen_0128'); alert('快手号已复制')">
+            luochen_0128
+        </button>
+    </p>
+    
+    <br>
+    
+    <p>或</p>
+    
+    <br>
+    
+    <p>通过微信号找我：
+        <button class="copy-btn" style="color:#e4c478;" onclick="navigator.clipboard.writeText('An-Ying282823427'); alert('微信号已复制')">
+            An-Ying282823427
+        </button>
+    </p>
+    
+    <br>
+    
+    <p>通过QQ号找我（不太推荐，但是可以加）:
+        <button class="copy-btn" style="color:#205198;" onclick="navigator.clipboard.writeText('3853035398'); alert('QQ号已复制')">
+            3853035398
+        </button>
+    </p>
+    
+    <br>
+    
+    <div class="group-box">
+        <p>OC交流群如下</p>
+        <p>QQ群:
+            <button style="background:none; border:none; color:white; text-decoration:underline; cursor:pointer;" onclick="navigator.clipboard.writeText('698062442'); alert('QQ群号已复制')">
+                698062442
+            </button>
+        </p>
+        <p>快手群见快手相关主页</p>
+    </div>
+
+<p style="background-color: white; color: #205198; padding: 10px; border-radius: 5px; max-width: 600px; margin: 20px auto;">
+    欢迎大家积极找我，本人来者不拒
+</p>
+    
+    <script>
+        // 确保复制功能在部分手机上能用
+        function copyText(text, msg) {
+            navigator.clipboard.writeText(text).then(() => alert(msg));
+        }
+    </script>
 </body>
 </html>
